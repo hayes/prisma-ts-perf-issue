@@ -19,5 +19,5 @@ Replace `createField` in `index.ts` with commented out version and run `npm run 
 
 Results:
 
-Version with generic is on the left:
+Version with generic is on the left.  There are huge increases in Types, Instatiations, and Assignability cache size
 ![results screenshot](./results.png)
