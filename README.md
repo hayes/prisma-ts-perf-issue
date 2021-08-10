@@ -4,6 +4,15 @@ I have noticed that there is significant overhead when using large objects (like
 
 This repo has a small reproduction of the issue. I'm not sure if it's technically a bug, but I am hoping there is a way to optimize this case.
 
+
+* `src/index.ts` has a very simple reproduction of the issue
+* `src/prisma-client.d.ts` includes a slightly simplified version of types generated from the prisma schema in the `prisma`.
+
+The `prisma-client` types serve as a stand-in for any large complex type.
+
+
+It has a slightly simplified version of a prisma-client generated from the schema in the prisma directory.
+
 ## Reproduction steps:
 
 To generate diagnostics with the problem present:

@@ -1,4 +1,4 @@
-import { PrismaClient } from "@prisma/client";
+import { PrismaClient } from "./prisma-client";
 
 function createField<Type extends string>(options: {
   type: Type;
